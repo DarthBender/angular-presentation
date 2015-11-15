@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $(document).keyup(function(){ 
+            var yourName= $("#yourName").val();
+           $("#output").html(yourName+"!");
+        });
+    });      
+    </script>
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <input type="text" id="yourName" placeholder="Enter a name here">
+      <hr>
+          <h1>Hello <b id="output">!</b></h1>
+    </div>
+  </body>
+</html>
